@@ -1,0 +1,23 @@
+{
+  "name": "rspress-doc-template",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "rspress dev",
+    "build": "rspress build",
+    "preview": "rspress preview"
+  },
+  "sideEffects": [
+    "**/.rspress/**/*.js"
+  ],
+  "dependencies": {
+    "rspress": "1.20.1",
+    "react": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@rspress/plugin-preview": "1.20.1",
+    "@rspress/plugin-container-syntax": "1.20.1",
+    "@rspress/plugin-playground": "1.20.1"
+  }
+}
