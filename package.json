@@ -11,13 +11,14 @@
     "**/.rspress/**/*.js"
   ],
   "dependencies": {
-    "rspress": "1.20.1",
+    "rspress": "1.25.2",
     "react": "18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "@rspress/plugin-preview": "1.20.1",
-    "@rspress/plugin-container-syntax": "1.20.1",
-    "@rspress/plugin-playground": "1.20.1"
-  }
+    "@rspress/plugin-preview": "1.25.2",
+    "@rspress/plugin-container-syntax": "1.25.2",
+    "@rspress/plugin-playground": "1.25.2"
+  },
+  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
 }

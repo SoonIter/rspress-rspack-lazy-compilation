@@ -1,8 +1,5 @@
-import * as path from 'path';
+import path from 'node:path';
 import { defineConfig } from 'rspress/config';
-import { pluginPreview } from '@rspress/plugin-preview';
-import { pluginPlayground } from '@rspress/plugin-playground';
-import { RsdoctorRspackPlugin } from '@rsdoctor/rspack-plugin';
 
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
@@ -26,23 +23,10 @@ export default defineConfig({
     ],
   },
   builderConfig: {
-    source: {
-      // preEntry: ['/Users/appe/Documents/demos/rspress-preview-demo/node_modules/@rspress/plugin-container-syntax/container.css'],
-    },
     dev: {
+      lazyCompilation: true,
       writeToDisk: true,
     },
-    tools: {
-      rspack(config) {
-        // config.plugins.push(new RsdoctorRspackPlugin());
-        config.optimization.minimize = false;
-        return config;
-      },
-    },
   },
-  plugins: [
-    // pluginPreview({
-    //   previewMode: 'iframe',
-    // }),
-  ],
+  plugins: [],
 });
